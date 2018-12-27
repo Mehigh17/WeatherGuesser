@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherGuesser", "WeatherGuesser\WeatherGuesser.csproj", "{C836212B-BCBC-4A26-9D01-A51EB9123B54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherGuesserApp", "WeatherGuesserApp\WeatherGuesserApp.csproj", "{3501BA65-61F4-428D-8197-7465A43080CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C836212B-BCBC-4A26-9D01-A51EB9123B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C836212B-BCBC-4A26-9D01-A51EB9123B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C836212B-BCBC-4A26-9D01-A51EB9123B54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3501BA65-61F4-428D-8197-7465A43080CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3501BA65-61F4-428D-8197-7465A43080CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3501BA65-61F4-428D-8197-7465A43080CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3501BA65-61F4-428D-8197-7465A43080CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
