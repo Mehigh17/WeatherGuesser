@@ -79,6 +79,60 @@ namespace WeatherGuesserApp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Machine loaded successfully.
+        /// </summary>
+        internal static string LoadSuccessfull {
+            get {
+                return ResourceManager.GetString("LoadSuccessfull", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Machine ready.
+        /// </summary>
+        internal static string MachineReady {
+            get {
+                return ResourceManager.GetString("MachineReady", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Normalizing images.
+        /// </summary>
+        internal static string NormalizingImages {
+            get {
+                return ResourceManager.GetString("NormalizingImages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ready to train.
+        /// </summary>
+        internal static string ReadyToTrain {
+            get {
+                return ResourceManager.GetString("ReadyToTrain", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Training.
+        /// </summary>
+        internal static string Training {
+            get {
+                return ResourceManager.GetString("Training", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Training complete.
+        /// </summary>
+        internal static string TrainingComplete {
+            get {
+                return ResourceManager.GetString("TrainingComplete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please select the location where the root of the training data is located..
         /// </summary>
         internal static string TrainingDataBrowserTip {
