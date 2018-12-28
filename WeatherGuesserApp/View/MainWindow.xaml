@@ -6,29 +6,38 @@
         xmlns:local="clr-namespace:WeatherGuesserApp.ViewModel"
         mc:Ignorable="d"
 		DataContext="{Binding HomeViewModel, Source={StaticResource ViewModelLocator}}"
-        Title="WeatherGuesser" MinHeight="525" Height="525" Width="800">
-	<StackPanel Margin="10" Orientation="Vertical">
-		<StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+        Title="WeatherGuesser" MinHeight="540" Width="800">
+	<Grid Margin="10">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+
+		<StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,5,0,0">
 			<Button Content="Load Training Data" Padding="5,5,5,5" Margin="0,0,5,0" HorizontalAlignment="Right" Command="{Binding OpenTrainingDataBrowserCommand}"/>
 			<Button Content="Start Training" Padding="5,5,5,5" Margin="0,0,5,0"  Command="{Binding StartTrainingCommand}"/>
-			<Button Content="Load Trained Data" Padding="5,5,5,5" Command="{Binding StartTrainingCommand}"/>
+			<Button Content="Load Machine" Padding="5,5,5,5" Margin="0,0,5,0" Command="{Binding LoadMachineCommand}"/>
+			<Button Content="Save Machine" Padding="5,5,5,5"  Command="{Binding SaveMachineCommand}"/>
 			<TextBlock Text="{Binding ModelCount, StringFormat='Models loaded: {0}'}" VerticalAlignment="Center" Margin="5,0,5,0"/>
 		</StackPanel>
-		<ListView Margin="0,5,0,0" Height="150" ItemsSource="{Binding DataPaths}">
+		<ListView Grid.Row="1" Margin="0,5,0,0" Height="150" ItemsSource="{Binding DataPaths}">
 			<ListView.ItemTemplate>
 				<DataTemplate>
 					<StackPanel Orientation="Horizontal">
-						<Label Content="{Binding Key}"/>
-						<Label Content="{Binding Value}"/>
+						<CheckBox IsEnabled="False" IsChecked="{Binding IsChecked}" VerticalAlignment="Center" />
+						<Label Content="{Binding WeatherType}"/>
+						<Label Content="{Binding Name}"/>
 					</StackPanel>
 				</DataTemplate>
 			</ListView.ItemTemplate>
 		</ListView>
-		<Separator Margin="0,10,0,10" />
-		<StackPanel Orientation="Horizontal">
-			<Label Content="Select image for evaluation:" VerticalAlignment="Center"/>
-			<Button Content="Select" Padding="5,0,5,0" Command="{Binding SelectEvaluationImageCommand}"/>
-		</StackPanel>
-		<Image Height="200" Width="200" Source="{Binding DisplayedEvaluationImage}" />
-	</StackPanel>
+		<Separator Grid.Row="2" Margin="0,10,0,10" />
+		<Button Grid.Row="3" Content="Evaluate Image" Padding="5,5,5,5" Margin="20,0,20,5" Command="{Binding SelectEvaluationImageCommand}"/>
+		<Image Grid.Row="4" Source="{Binding DisplayedEvaluationImage}" Stretch="Uniform" />
+		<Label Grid.Row="5" Content="{Binding StatusText}" FontSize="22" HorizontalContentAlignment="Center"/>
+	</Grid>
 </Window>
