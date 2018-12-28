@@ -13,5 +13,8 @@ namespace WeatherGuesser.Interfaces
 
 		void Learn(List<KeyValuePair<WeatherType, double[]>> data);
 
+		void Load(string path);
+		void Save(string path);
+
 	}
 }
