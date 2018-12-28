@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Text;
 using WeatherGuesser.Interfaces;
 
 namespace WeatherGuesser.Loggers
 {
-	public class ConsoleLogger : ILogger
+	public class DebugLogger : ILogger
 	{
 
 		public bool ShowTimestamp { get; set; } = true;
@@ -19,6 +20,8 @@ namespace WeatherGuesser.Loggers
 			}
 
 			stringBuilder.Append(message);
+
+			Debug.WriteLine(stringBuilder.ToString());
 		}
 	}
 }

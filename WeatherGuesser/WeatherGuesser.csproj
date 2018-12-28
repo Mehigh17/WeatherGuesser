@@ -78,7 +78,7 @@
     <Compile Include="Interfaces\ILearningService.cs" />
     <Compile Include="Interfaces\ILogger.cs" />
     <Compile Include="Interfaces\INormalizeService.cs" />
-    <Compile Include="Loggers\ConsoleLogger.cs" />
+    <Compile Include="Loggers\DebugLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\MulticlassSvmLearningService.cs" />
     <Compile Include="Services\StandardNormalizeService.cs" />
