@@ -114,4 +114,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+	<data name="TrainingDataBrowserTip" xml:space="preserve">
+    <value>Please select the location where the root of the training data is located.</value>
+  </data>
+	<data name="DirectoryNotFoundTitle" xml:space="preserve">
+    <value>Directory not found</value>
+  </data>
+	<data name="DirectoryNotFoundWarning" xml:space="preserve">
+    <value>The folder '{0}' could not be found, please make sure it exists.</value>
+  </data>
 </root>
