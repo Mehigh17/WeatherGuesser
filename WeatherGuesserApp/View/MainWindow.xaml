@@ -1,0 +1,34 @@
+﻿<Window x:Class="WeatherGuesserApp.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeatherGuesserApp.ViewModel"
+        mc:Ignorable="d"
+		DataContext="{Binding HomeViewModel, Source={StaticResource ViewModelLocator}}"
+        Title="WeatherGuesser" MinHeight="525" Height="525" Width="800">
+	<StackPanel Margin="10" Orientation="Vertical">
+		<StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+			<Button Content="Load Training Data" Padding="5,5,5,5" Margin="0,0,5,0" HorizontalAlignment="Right" Command="{Binding OpenTrainingDataBrowserCommand}"/>
+			<Button Content="Start Training" Padding="5,5,5,5" Margin="0,0,5,0"  Command="{Binding StartTrainingCommand}"/>
+			<Button Content="Load Trained Data" Padding="5,5,5,5" Command="{Binding StartTrainingCommand}"/>
+			<TextBlock Text="{Binding ModelCount, StringFormat='Models loaded: {0}'}" VerticalAlignment="Center" Margin="5,0,5,0"/>
+		</StackPanel>
+		<ListView Margin="0,5,0,0" Height="150" ItemsSource="{Binding DataPaths}">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<StackPanel Orientation="Horizontal">
+						<Label Content="{Binding Key}"/>
+						<Label Content="{Binding Value}"/>
+					</StackPanel>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+		<Separator Margin="0,10,0,10" />
+		<StackPanel Orientation="Horizontal">
+			<Label Content="Select image for evaluation:" VerticalAlignment="Center"/>
+			<Button Content="Select" Padding="5,0,5,0" Command="{Binding SelectEvaluationImageCommand}"/>
+		</StackPanel>
+		<Image Height="200" Width="200" Source="{Binding DisplayedEvaluationImage}" />
+	</StackPanel>
+</Window>
