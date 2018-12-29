@@ -18,12 +18,12 @@ Since it's restrained to only 3 types of weathers (Sunny, Cloudy, Thunderstorm),
    |- picture_of_sunny_sky_2.jpg
    |- etc.
  |--- cloudy
-   |- picture_of_sunny_sky_1.jpg
-   |- picture_of_sunny_sky_2.jpg
+   |- picture_of_cloudy_sky_1.jpg
+   |- picture_of_cloudy_sky_2.jpg
    |- etc.
  |--- thunderstorm
-   |- picture_of_sunny_sky_1.jpg
-   |- picture_of_sunny_sky_2.jpg
+   |- picture_of_thunderstorm_1.jpg
+   |- picture_of_thunderstorm_2.jpg
    |- etc.
 ```
 
