@@ -1,11 +1,11 @@
 ﻿using GalaSoft.MvvmLight.Ioc;
-using WeatherGuesser.Interfaces;
-using WeatherGuesser.Loggers;
-using WeatherGuesser.Services;
+using WeatherGuesser.Model.Interfaces;
+using WeatherGuesser.Model.Loggers;
+using WeatherGuesser.Model.Services;
 
-namespace WeatherGuesserApp.ViewModel
+namespace WeatherGuesser.Wpf.ViewModel
 {
-	public class ViewModelLocator
+    public class ViewModelLocator
 	{
 
 		public HomeViewModel HomeViewModel => SimpleIoc.Default.GetInstance<HomeViewModel>();

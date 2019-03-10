@@ -1,7 +1,6 @@
 ﻿using System.Windows;
-using WeatherGuesserApp.ViewModel;
 
-namespace WeatherGuesserApp.View
+namespace WeatherGuesser.Wpf.View
 {
 	/// <summary>
 	/// Interaction logic for MainWindow.xaml

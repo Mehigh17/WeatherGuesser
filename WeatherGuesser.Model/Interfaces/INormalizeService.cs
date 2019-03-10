@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace WeatherGuesser.Interfaces
+namespace WeatherGuesser.Model.Interfaces
 {
 	public interface INormalizeService
 	{

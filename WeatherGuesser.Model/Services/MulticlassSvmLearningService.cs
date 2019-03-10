@@ -6,12 +6,12 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using WeatherGuesser.Enums;
-using WeatherGuesser.Interfaces;
+using WeatherGuesser.Model.Enums;
+using WeatherGuesser.Model.Interfaces;
 
-namespace WeatherGuesser.Services
+namespace WeatherGuesser.Model.Services
 {
-	public class MulticlassSvmLearningService : ILearningService
+    public class MulticlassSvmLearningService : ILearningService
 	{
 
 		private readonly INormalizeService _normalizeService;

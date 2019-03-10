@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Accord.Imaging.Converters;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Accord.Imaging.Converters;
-using WeatherGuesser.Interfaces;
+using WeatherGuesser.Model.Interfaces;
 
-namespace WeatherGuesser.Services
+namespace WeatherGuesser.Model.Services
 {
-	public class StandardNormalizeService : INormalizeService
+    public class StandardNormalizeService : INormalizeService
 	{
 
 		private const int StandardImageSize = 128;

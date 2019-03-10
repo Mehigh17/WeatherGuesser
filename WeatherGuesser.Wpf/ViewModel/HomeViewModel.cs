@@ -1,20 +1,20 @@
-﻿using GalaSoft.MvvmLight;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using WeatherGuesser.Enums;
-using WeatherGuesser.Interfaces;
-using WeatherGuesserApp.Properties;
-using System.Drawing;
+using GalaSoft.MvvmLight;
+using WeatherGuesser.Model.Enums;
+using WeatherGuesser.Model.Interfaces;
+using WeatherGuesser.Wpf.Properties;
 using RelayCommand = GalaSoft.MvvmLight.CommandWpf.RelayCommand;
 
-namespace WeatherGuesserApp.ViewModel
+namespace WeatherGuesser.Wpf.ViewModel
 {
-	public class HomeViewModel : ViewModelBase
+    public class HomeViewModel : ViewModelBase
 	{
 
 		private readonly ILearningService _learningService;
