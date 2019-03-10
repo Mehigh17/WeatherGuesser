@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
-using WeatherGuesser.Enums;
+using WeatherGuesser.Model.Enums;
 
-namespace WeatherGuesser.Interfaces
+namespace WeatherGuesser.Model.Interfaces
 {
 	public interface ILearningService
 	{

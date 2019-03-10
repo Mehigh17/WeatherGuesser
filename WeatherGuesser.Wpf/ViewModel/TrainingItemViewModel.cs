@@ -1,9 +1,9 @@
 ﻿using GalaSoft.MvvmLight;
-using WeatherGuesser.Enums;
+using WeatherGuesser.Model.Enums;
 
-namespace WeatherGuesserApp.ViewModel
+namespace WeatherGuesser.Wpf.ViewModel
 {
-	public class TrainingItemViewModel : ViewModelBase
+    public class TrainingItemViewModel : ViewModelBase
 	{
 		private WeatherType _weatherType;
 		private string _name;

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Text;
-using WeatherGuesser.Interfaces;
+using WeatherGuesser.Model.Interfaces;
 
-namespace WeatherGuesser.Loggers
+namespace WeatherGuesser.Model.Loggers
 {
 	public class DebugLogger : ILogger
 	{
